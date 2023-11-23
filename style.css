@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b0a33;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ff8a00, #e52e71, #4f5bd5);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+    
+}
+
+.back {
+    background: linear-gradient(45deg, #ff8a00, #e52e71, #4f5bd5);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#head {
+    color: white;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    border: 2px solid #6c28cc;
+    border-radius: 10px;
+}
+
+.box {
+    width: 100%; 
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #511e99;
+    color: white;
+    border: 1px solid #361466;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 16px;
+}
+
+.box:hover {
+    background-color: #6c28cc;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.submit-btn {
+    width: 150px;
+    margin-left: 170px;
+    margin-bottom: 20px;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: #6c28cc;
+    color: white;
+    border: 1px solid #511e99;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #FF007F;
+}
+
+.box:hover {
+    background-color: #FF007F;
+    color: white;
+}
+
+.box::placeholder {
+    color: white;
+}
+
+.back{
+    
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveySystem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="back">
+    <div class="heading">
+        <h1 id="head">Mobile App Usage and Preferences</h1>
+    </div>
+<div id="thankYouMessage" style="display: none;">
+    <h2>Thank you for submitting the form!</h2>
+</div>
+    <form id="surveyForm">
+        <div id="content1">
+            
+            <label for="age">Age</label><br><br>
+            <input type="number" name="age" placeholder="Enter your Age" class="box"><br><br>
+
+            <label>Gender</label><br><br>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" value="other" id="other">
+            <label for="other">Other</label><br><br>
+
+            <label for="Usage">Usage</label><br><br>
+            <select name="Usage" class="box">
+                <option value="" selected disabled>Select your mobile app usage</option>
+                <option value="less than 2">Less than 2 apps</option>
+                <option value="less than 5">Less than 5 apps</option>
+                <option value="less than 7">Less than 7 apps</option>
+                <option value="less than 10">Less than 10 apps</option>
+                <option value="more than 10">More than 10 apps</option>
+            </select><br><br>
+
+            <label for="type">Type</label><br><br>
+            <input type="text" name="type" placeholder="Which types of apps do you use most frequently" class="box"><br><br>
+
+            <label for="favoriteApp">Favorite Mobile App</label><br><br>
+            <select name="favoriteApp" class="box">
+                <option value="" selected disabled>Select your favorite app</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Twitter">Twitter</option>
+                <option value="YouTube">YouTube</option>
+                <option value="Snapchat">Snapchat</option>
+                <option value="TikTok">TikTok</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Uber">Uber</option>
+                <option value="Netflix">Netflix</option>
+            </select><br><br>
+
+            <label for="FutureExpectations">Future Expectations</label><br><br>
+            <input type="text" name="FutureExpectations" placeholder="What features would you like to see in future mobile applications?" class="box"><br><br>
+
+            <input type="submit" value="Submit" class="submit-btn">
+
+        </div>
+    </form>
+
+    <div id="thankYouMessage" style="display: none;">
+        <h2>Thank you for filling out the form!</h2>
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
