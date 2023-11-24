@@ -15,11 +15,6 @@ body {
     
 }
 
-.back {
-    background: linear-gradient(45deg, #ff8a00, #e52e71, #4f5bd5);
-    background-size: 600% 600%;
-    animation: gradientAnimation 15s ease infinite;
-}
 
 @keyframes gradientAnimation {
     0% {
@@ -60,7 +55,7 @@ body {
 }
 
 .box {
-    width: 100%; 
+    width: 500px; 
     padding: 15px;
     margin-bottom: 20px;
     box-sizing: border-box;
@@ -103,8 +98,4 @@ body {
 
 .box::placeholder {
     color: white;
-}
-
-.back{
-    
 }
